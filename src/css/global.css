@@ -1,0 +1,12 @@
+/* Variables */
+:root {
+  --wedding-blue: #74c7d5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wedding-blue-bg {
+  background: var(--wedding-blue);
+}
