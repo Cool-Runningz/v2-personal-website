@@ -62,5 +62,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "resolutions": {
+    "gatsby-source-graphql": "^2.7.4"
   }
 }
