@@ -1,8 +1,7 @@
 {
-  "name": "@oddstronaut/gatsby-starter-tailwind",
+  "name": "v2-personal-website",
   "description": "Gatsby starter styled with Tailwind",
-  "version": "3.0.25",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "version": "1.0.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -17,7 +16,6 @@
     "gatsby-plugin-purgecss": "4.0.0",
     "gatsby-plugin-react-helmet": "3.1.0",
     "gatsby-source-graphql": "^2.7.4",
-    "graphql": "14.3.1",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
@@ -34,7 +32,7 @@
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different '**/*.{js,css,md,json}'",
     "analyze": "npm run analyze:lint && npm run analyze:prettier",
-    "build": "yarn run clean && gatsby build",
+    "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && node deploy",
     "develop": "gatsby develop",
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
@@ -64,8 +62,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "resolutions": {
-    "graphql": "^15.3.0"
   }
 }
