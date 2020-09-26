@@ -64,5 +64,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "resolutions": {
+    "graphql": "^15.3.0"
   }
 }
