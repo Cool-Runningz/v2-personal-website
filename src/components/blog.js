@@ -14,9 +14,8 @@ const getFormattedDate = (date) => {
 
 const renderBlogCards = (dataObj) => {
   const posts = dataObj.hashnode.user.publication.posts;
-  posts.pop();
 
-  return posts.map((post, index) => {
+  return posts.slice(0,5).map((post, index) => {
     return (
       <BlogCard
         key={`${index}-${post.slug}`}
