@@ -40,11 +40,12 @@ module.exports = {
         url: "https://api.hashnode.com/",
       },
     },
-    /*{
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-74091687-3",
+        head: true,
       },
-    }*/
+    }
   ]
 };
