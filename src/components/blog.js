@@ -15,7 +15,7 @@ const getFormattedDate = (date) => {
 const renderBlogCards = (dataObj) => {
   const posts = dataObj.hashnode.user.publication.posts;
 
-  return posts.slice(0,5).map((post, index) => {
+  return posts.slice(0, 5).map((post, index) => {
     return (
       <BlogCard
         key={`${index}-${post.slug}`}
@@ -57,6 +57,20 @@ const Blog = (props) => {
             </h2>
             <div className="w-full mb-12">
               <div className="h-1 mx-auto wedding-blue-bg w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            </div>
+            <div className="flex justify-center mb-5 p-4 bg-gray-300 border border-gray-800">
+              <p className="text-gray-800 text-center text-lg">
+                In my blog I write about Programming 👩🏽‍💻 and Productivity Tips ✔️
+                <br />
+                <br />
+                Feel free to check out a full list of all my blog posts&nbsp;
+                <a
+                  className="font-bold underline"
+                  href="https://blog.alyssaholland.me/"
+                >
+                  here
+                </a>
+              </p>
             </div>
             <div className="flex flex-wrap justify-center">
               {renderBlogCards(data)}
