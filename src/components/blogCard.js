@@ -32,7 +32,7 @@ const BlogCard = (props) => {
         <div>
           <a href={`https://blog.alyssaholland.me/${props.slug}`}>
             <p className="text-gray-800 hover:underline">
-              Read Blog
+              Read Article
               <FontAwesomeIcon
                 className="text-gray-800 ml-2"
                 icon={faGlasses}

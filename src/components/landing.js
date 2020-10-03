@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import SocialIcons from "./socialIcons";
-import avatar from "../images/avatar.png";
+import avatar from "../images/avatar.svg";
 
 const Landing = (props) => {
   return (
