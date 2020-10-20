@@ -21,7 +21,7 @@ const Landing = (props) => {
           <h4 className="text-2xl text-gray-800 mb-3 font-mono">
             🎷 Former Band Geek
           </h4>
-          <div className="z-20">
+          <div className="flex z-20">
             <SocialIcons section="landing" />
           </div>
         </div>
