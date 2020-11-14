@@ -11,7 +11,7 @@
     "ftp-deploy": "^2.3.3",
     "gatsby": "2.10.4",
     "gatsby-plugin-fontawesome-css": "^1.0.0",
-    "gatsby-plugin-google-analytics": "^2.3.14",
+    "gatsby-plugin-google-analytics": "^2.5.0",
     "gatsby-plugin-manifest": "2.2.0",
     "gatsby-plugin-postcss": "2.1.0",
     "gatsby-plugin-purgecss": "4.0.0",
