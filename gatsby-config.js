@@ -3,8 +3,10 @@ module.exports = {
     title: `UI Developer`,
     description: `Personal Website for Alyssa Holland`,
     author: `Alyssa Holland`,
+    url: "https://alyssaholland.com/",
     github: `https://github.com/Cool-Runningz`,
     blog: `https://blog.alyssaholland.me/`,
+    image: "src/images/logo-square.png"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
