@@ -76,7 +76,7 @@ const Blog = (props) => {
           </div>
           <div className="flex justify-center mb-5 p-4 bg-gray-300 border border-gray-800">
             <p className="text-gray-800 text-center text-lg">
-              In my blog I write about Programming 👩🏽‍💻 and Productivity Tips ✔️
+              In my blog, I write about Programming 👩🏽‍💻 and Productivity Tips ✔️
               <br />
               <br />
               Feel free to check out a full list of all my blog posts&nbsp;
