@@ -7,7 +7,9 @@ import ProjectCard from "./projectCard";
 //Images
 import ipsumImg from "../images/dark-bass-bg.jpg";
 import bgSopranoImg from "../images/bg-headshot.png";
-import designLabImg from "../images/designlab.png";
+import rangeInputImg from "../images/range-input-css.png";
+import photonRacerImg from "../images/photon-racer-editor-view.png";
+import shortcutSearchImg from "../images/shortcut-search.png";
 
 const Projects = (props) => {
   return (
@@ -21,33 +23,40 @@ const Projects = (props) => {
         </div>
         <div className="flex w-full justify-around flex-wrap">
           <ProjectCard
+            imgSrc={rangeInputImg}
+            title="range-input.css"
+            description="Range Input CSS Generator"
+            btnText="View Website"
+            onClick={() => window.open("https://range-input-css.netlify.app/", "_blank", "noopener, noreferrer")}
+          />
+          <ProjectCard
+            imgSrc={photonRacerImg}
+            title="Photon Racer"
+            description="Custom VSCode Theme"
+            btnText="View Theme"
+            onClick={() => window.open("https://marketplace.visualstudio.com/items?itemName=CodeRunnings.photon-racer", "_blank", "noopener, noreferrer")}
+          />
+          <ProjectCard
+            imgSrc={shortcutSearchImg}
+            title="Keyboard Shortcut Search"
+            description="Shortcuts to help boost productivity"
+            btnText="View Website"
+            onClick={() => window.open("https://keyboard-shortcut-search.vercel.app/", "_blank", "noopener, noreferrer")}
+          />
+          <ProjectCard
             imgSrc={ipsumImg}
             title="Jazz Ipsum"
             description="Lorem ipsum quotes from jazz legends"
             btnText="View Website"
-            onClick={() => window.open("https://www.jazzipsum.club/", "_blank")}
+            onClick={() => window.open("https://www.jazzipsum.club/", "_blank", "noopener, noreferrer")}
           />
-
           <ProjectCard
             imgSrc={bgSopranoImg}
             title="Brianna Grace Soprano"
             description="Music Portfolio Website"
             btnText="View Website"
             onClick={() =>
-              window.open("http://www.briannagracesoprano.com/", "_blank")
-            }
-          />
-
-          <ProjectCard
-            imgSrc={designLabImg}
-            title="Design 101 Course"
-            description="DesignLab"
-            btnText="View Projects"
-            onClick={() =>
-              window.open(
-                "https://trydesignlab.com/certificates/design-101-v1/alyssa_holland/",
-                "_blank"
-              )
+              window.open("http://www.briannagracesoprano.com/", "_blank", "noopener, noreferrer")
             }
           />
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const ProjectCard = (props) => {
   return (
-    <div className="max-w-s rounded overflow-hidden shadow-lg mb-8 mr-1">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg mb-8 mr-1">
       <img
         className="w-full"
         src={props.imgSrc}
