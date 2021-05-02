@@ -6,7 +6,7 @@ import avatar from "../images/avatar.svg";
 
 const Landing = (props) => {
   return (
-    <section className="pt-24">
+    <section id="home" className="pt-24">
       <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center vh-50 justify-center">
         <div className="flex flex-col md:w-2/5 justify-center text-left">
           <h1 className="my-4 text-5xl font-bold leading-tight text-gray-800">

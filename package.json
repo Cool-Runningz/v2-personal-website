@@ -25,8 +25,7 @@
   "keywords": [
     "gatsby",
     "tailwind",
-    "tailwindcss",
-    "purgecss"
+    "tailwindcss"
   ],
   "license": "MIT",
   "scripts": {
