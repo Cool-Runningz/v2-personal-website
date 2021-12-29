@@ -27,7 +27,7 @@ const renderBlogCards = (posts) => {
 
 const query = `
 {
-  user(username:"Code_Runnings") {
+  user(username:"AlyssaCodes") {
     publication {
       posts(page: 0) {
         title
