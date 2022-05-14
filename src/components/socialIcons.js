@@ -8,65 +8,62 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
-import SVGSymbols from './SVGSymbols'
+import SVGSymbols from '../util/SVGSymbols'
 
-const SocialIcons = (props) => {
+const Ahref = (props) => {
+  return (
+    <a
+    href={props.url}
+    className={props.section === "landing" ? "mr-8" : "mr-16"}
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+   {props.children}
+  </a> 
+  )
+}
+
+const SocialIcons = (props) => { 
   return (
     <>
-      <a
-        href="https://github.com/Cool-Runningz"
-        className={props.section === "landing" ? "mr-8" : "mr-16"}
-        target="_blank"
-      >
-        <FontAwesomeIcon
+    <Ahref url="https://github.com/Cool-Runningz" section={props.section}>
+       <FontAwesomeIcon
           className="text-gray-800 hover:text-gray-500"
           icon={faGithub}
           size="2x"
+          title="GitHub"
         />
-      </a>
-      <a
-        href="https://codesandbox.io/u/Cool-Runningz/sandboxes"
-        className={props.section === "landing" ? "mr-8" : "mr-16"}
-        target="_blank"
-      >
-        <FontAwesomeIcon
+    </Ahref>
+    <Ahref url="https://codesandbox.io/u/Cool-Runningz/sandboxes" section={props.section}>
+    <FontAwesomeIcon
           className="text-gray-800 hover:text-gray-500"
           icon={faCodepen}
           size="2x"
+          title="CodeSandbox"
         />
-      </a>
-      <a
-        href="https://www.notion.so/Alyssa-Holland-Resume-0180e242c3824570a5c362a731ae8ce6"
-        className={props.section === "landing" ? "mr-8" : "mr-16"}
-        target="_blank"
-      >
-        <FontAwesomeIcon
+    </Ahref>
+    <Ahref url="https://www.notion.so/Alyssa-Holland-Resume-0180e242c3824570a5c362a731ae8ce6" section={props.section}>
+    <FontAwesomeIcon
           className="text-gray-800 hover:text-gray-500"
           icon={faFileAlt}
           size="2x"
+          title="Resume"
         />
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/alyssa-samuels-holland"
-        className={props.section === "landing" ? "mr-8" : "mr-16"}
-        target="_blank"
-      >
-        <FontAwesomeIcon
+    </Ahref>
+    <Ahref url="https://www.linkedin.com/in/alyssa-samuels-holland" section={props.section}>
+    <FontAwesomeIcon
+         
           className="text-gray-800 hover:text-gray-500"
           icon={faLinkedinIn}
           size="2x"
+          title="Linkedin"
         />
-      </a>
-      <a
-        href="https://blog.alyssaholland.me/"
-        className={props.section === "landing" ? "mr-8" : "mr-16"}
-        target="_blank"
-      >
-        <svg className="w-8 h-8 text-gray-800 hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" width="337" height="337" viewBox="0 0 337 337" fill="none">
+    </Ahref>
+    <Ahref url="https://blog.alyssaholland.me/" section={props.section}>
+     <svg aria-label="Blog" className="w-8 h-8 text-gray-800 hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" width="337" height="337" viewBox="0 0 337 337" fill="none">
           {SVGSymbols["hashnode"]["content"]}
         </svg>
-      </a>
+    </Ahref>
     </>
   );
 };

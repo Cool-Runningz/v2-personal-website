@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
       <img
         className="w-full"
         src={props.imgSrc}
-        alt="Bass Player"
+        alt={props.altText}
         style={{ width: "20rem", height: "20rem" }}
       />
       <div className="px-6 py-4 text-center">
@@ -19,7 +19,7 @@ const ProjectCard = (props) => {
 
       <div className="max-w-sm">
         <button
-          className="wedding-blue-bg hover:bg-gray-400 hover:text-gray-800 text-white font-bold py-2 px-4 rounded w-full"
+          className="wedding-blue-bg hover:bg-gray-400 hover:text-gray-800 text-gray-800 font-bold py-2 px-4 rounded w-full"
           onClick={props.onClick}
         >
           {props.btnText}
@@ -31,10 +31,11 @@ const ProjectCard = (props) => {
 
 ProjectCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  btnText: PropTypes.string,
-  onClick: PropTypes.func,
+  altText: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  btnText: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ProjectCard;

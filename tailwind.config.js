@@ -1,7 +1,11 @@
-// See https://next.tailwindcss.com/docs/configuration for details
-
 module.exports = {
-  theme: {},
-  variants: {},
-  plugins: []
-};
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
+}

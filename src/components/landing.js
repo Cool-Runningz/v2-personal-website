@@ -1,26 +1,24 @@
 import React from "react";
-import PropTypes from "prop-types";
-
-import SocialIcons from "./socialIcons";
+import SocialIcons from "./SocialIcons";
 import avatar from "../images/avatar.svg";
 
 const Landing = (props) => {
   return (
-    <section id="home" className="pt-24">
-      <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center vh-50 justify-center">
+    <section id="home" className="pt-24 pb-20">
+      <div className="container mx-auto px-3 flex justify-center max-w-7xl">
         <div className="flex flex-col md:w-2/5 justify-center text-left">
           <h1 className="my-4 text-5xl font-bold leading-tight text-gray-800">
-            Hey, I'm <span className="text-gray-100"> Alyssa </span>
+            Hey, I'm Alyssa 
           </h1>
-          <h4 className="text-2xl text-gray-800 mb-3 font-mono">
+          <p className="text-2xl text-gray-800 mb-3 font-mono">
             👩🏽‍💻 UI Developer
-          </h4>
-          <h4 className="text-2xl text-gray-800 mb-3 font-mono">
+          </p>
+          <p className="text-2xl text-gray-800 mb-3 font-mono">
             🏃🏽‍♀️ Avid Runner
-          </h4>
-          <h4 className="text-2xl text-gray-800 mb-3 font-mono">
+          </p>
+          <p className="text-2xl text-gray-800 mb-3 font-mono">
             🎷 Former Band Geek
-          </h4>
+          </p>
           <div className="flex z-20">
             <SocialIcons section="landing" />
           </div>
@@ -30,9 +28,5 @@ const Landing = (props) => {
     </section>
   );
 };
-
-/*Landing.propTypes = {
-
-};*/
 
 export default Landing;

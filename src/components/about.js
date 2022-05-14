@@ -1,12 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
-
 import profileImg from "../images/Miami-Marathon.jpeg";
 
 const About = (props) => {
   return (
     <section id="about" className="bg-gray-100 py-8">
-      <div className="container mx-auto px-2 pt-12 pb-12 text-gray-800">
+      <div className="container mx-auto px-2 pt-12 pb-12 text-gray-800 max-w-[85%]">
         <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
           About Me
         </h2>
@@ -19,7 +17,7 @@ const About = (props) => {
             <img
               className="polaroid-img"
               src={profileImg}
-              alt="Profile Picture"
+              alt="Profile avatar"
             />
           </figure>
           <div>

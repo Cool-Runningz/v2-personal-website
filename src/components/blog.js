@@ -1,7 +1,5 @@
 import React, { useEffect, useState} from "react";
-import PropTypes from "prop-types";
-
-import BlogCard from "./blogCard";
+import BlogCard from "./BlogCard";
 
 const getFormattedDate = (date) => {
   const newDate = new Date(date);

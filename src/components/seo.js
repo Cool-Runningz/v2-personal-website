@@ -1,107 +1,53 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Helmet from "react-helmet";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react'
+import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
+import { graphql, useStaticQuery } from 'gatsby'
 
-function SEO({ description, lang, meta, keywords, image, title }) {
-  return (
-    <StaticQuery
-      query={detailsQuery}
-      render={data => {
-        const metaDescription =
-          description || data.site.siteMetadata.description;
-        const metaImage = image || data.site.siteMetadata.image;
-        
-        return (
-          <Helmet
-            htmlAttributes={{
-              lang
-            }}
-            title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-            meta={[
-              {
-                name: `description`,
-                content: metaDescription
-              },
-              {
-                property: `og:title`,
-                content: title
-              },
-              {
-                property: `og:description`,
-                content: metaDescription
-              },
-              {
-                property: `og:type`,
-                content: `website`
-              },
-              {
-                property: `og:image`,
-                content: metaImage
-              },
-              {
-                name: `twitter:card`,
-                content: `summary_large_image`
-              },
-              {
-                name: `twitter:creator`,
-                content: data.site.siteMetadata.author
-              },
-              {
-                name: `twitter:title`,
-                content: title
-              },
-              {
-                name: `twitter:description`,
-                content: metaDescription
-              },
-              {
-                name: 'twitter:image',
-                content: metaImage
-              }
-            ]
-              .concat(
-                keywords.length > 0
-                  ? {
-                      name: `keywords`,
-                      content: keywords.join(`, `)
-                    }
-                  : []
-              )
-              .concat(meta)}
-          />
-        );
-      }}
-    />
-  );
-}
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: []
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired
-};
-
-export default SEO;
-
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
+const gqlQuery = graphql`
+query SiteMetaData {
     site {
       siteMetadata {
         title
         description
-        author
-        image
+        siteUrl
+        imageUrl
+        twitterUsername
       }
     }
   }
-`;
+`
+
+const Seo = (props) => {
+   const { site } = useStaticQuery(gqlQuery)
+   const { title, description, imageUrl, siteUrl, twitterUsername } = site.siteMetadata
+
+  return (
+      <Helmet title={title} htmlAttributes={{ lang: 'en' }}>
+          <meta name="image" content={imageUrl} />
+          <meta name="description" content={description} />
+          
+          <meta property="og:description" content={description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={siteUrl} />
+          <meta property="og:image" content={imageUrl} />
+          <meta property="og:title" content={title} />
+
+           <meta name="twitter:card" content="summary_large_image" />
+           <meta name="twitter:creator" content={twitterUsername} /> 
+           <meta name="twitter:title" content={title} />
+           <meta name="twitter:url" content={siteUrl} />
+           <meta name="twitter:description" content={description} />
+           <meta name="twitter:image" content={imageUrl} />
+      </Helmet>
+  )
+}
+
+//Note: If you use this in other pages then pass in props to make metadata dynamic
+Seo.propTypes = {
+  siteUrl: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  imageUrl: PropTypes.string,
+}
+
+export default Seo

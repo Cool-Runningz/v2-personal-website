@@ -16,7 +16,7 @@ const BlogCard = (props) => {
       ></div>
       <div className="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
         <div className="mb-8">
-          <div className="text-gray-900 font-bold text-xl mb-2 truncate">
+          <div className="text-gray-900 font-bold text-xl mb-2 truncate lg:whitespace-normal">
             <a
               href={`https://blog.alyssaholland.me/${props.slug}`}
               className="hover:underline"
@@ -37,6 +37,7 @@ const BlogCard = (props) => {
                 className="text-gray-800 ml-2"
                 icon={faGlasses}
                 size="xs"
+                title={props.title}
               />
             </p>
           </a>

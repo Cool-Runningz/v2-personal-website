@@ -1,20 +1,40 @@
-import React from "react";
+import * as React from "react"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+//Images
+import waveTop from "../images/waveTop.svg";
+import waveBottom from "../images/waveBottom.svg";
 
-import ogImage from "../images/logo-square.png";
+//Components
+import Seo from "../components/Seo";
+import Layout from '../components/Layout';
+import Landing from '../components/Landing'
+import Blog from '../components/Blog';
+import About from '../components/About';
+import Projects from '../components/Projects';
+import Contact from '../components/Contact';
 
-function IndexPage() {
+const IndexPage = () => {
   return (
-    <Layout>
-      <SEO
-        image={ogImage}
-        title="Alyssa Holland"
-        keywords={[`Alyssa`, `Holland`, `Alyssa Holland`]}
-      />
-    </Layout>
-  );
+   <Layout>
+       <Seo />
+       <main className="leading-normal tracking-normal text-white wedding-blue-bg">
+        <Landing />
+
+        {/* Waves SVG */}
+      <div className="relative -mt-12 lg:-mt-16">
+        <img src={waveBottom} alt="wave bottom" />
+      </div>
+
+      <Blog />
+      <About />
+      <Projects />
+
+       {/* Waves SVG */}
+       <img src={waveTop} alt="wave Top" />
+      <Contact />
+    </main>
+   </Layout>
+  )
 }
 
-export default IndexPage;
+export default IndexPage

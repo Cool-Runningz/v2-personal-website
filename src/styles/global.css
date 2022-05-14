@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    :root {
+        --wedding-blue: #74c7d5;
+      }
+      
+
+    .wedding-blue-bg {
+        background: var(--wedding-blue);
+      }
+
+      .polaroid {
+        background-color: #fff;
+        padding: 1rem 1rem 5rem;
+        box-shadow: 5px 10px 4px #888888;
+        outline: 1px solid #000;
+    }
+
+    .wedding-blue-txt {
+        color: var(--wedding-blue);
+    }
+}
