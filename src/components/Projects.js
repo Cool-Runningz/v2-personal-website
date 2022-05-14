@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCard from "./projectCard";
+import ProjectCard from "./ProjectCard";
 
 //Images
 import roadTripFMImg from '../images/roadTrip-fm.jpeg'
