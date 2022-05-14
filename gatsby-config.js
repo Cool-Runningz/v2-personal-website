@@ -29,5 +29,12 @@ module.exports = {
       domain: `alyssaholland.com`,
     },
   },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      icon: `src/images/favicon.png`
+    },
+  },
+
  ]
 };
