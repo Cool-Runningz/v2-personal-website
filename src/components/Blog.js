@@ -40,12 +40,12 @@ const query = `
 
 const LoadingCard = () => {
     return (
-      <div className="max-w-sm w-full lg:max-w-full lg:flex py-4 mr-4 border border-gray-400 rounded shadow h-48 p-4 mb-8">
-        <div className="animate-pulse flex flex-row w-full">
-          <div className="basis-1/3">
-            <div className="rounded bg-slate-700 h-36 w-72"></div>
+      <div className="max-w-sm w-full lg:max-w-full lg:flex py-4 mr-4 border border-gray-400 rounded shadow h-96 lg:h-48 p-4 mb-8">
+        <div className="animate-pulse flex flex-col lg:flex-row w-full">
+          <div className="lg:basis-1/3">
+            <div className="rounded bg-slate-700 h-36 w-auto lg:w-72"></div>
           </div>
-          <div className="py-2 basis-2/3">
+          <div className="py-2 lg:basis-2/3">
             <div className="h-2 bg-slate-700 rounded mb-8"></div>
             <div className="h-2 bg-slate-700 rounded mb-8"></div>
             <div className="h-2 bg-slate-700 rounded mb-8 w-1/2"></div>
@@ -109,7 +109,7 @@ const Blog = (props) => {
             </p>
           </div>
           <div className="flex flex-wrap justify-center">
-            {loading ? Array(3).fill(<LoadingCard />) : renderBlogCards(recentBlogPosts)}
+            {loading ? Array(4).fill(<LoadingCard />) : renderBlogCards(recentBlogPosts)}
           </div>
         </div>
       </section>
