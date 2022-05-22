@@ -38,10 +38,30 @@ const query = `
   }
 }`
 
+const LoadingCard = () => {
+    return (
+      <div className="max-w-sm w-full lg:max-w-full lg:flex py-4 mr-4 border border-gray-400 rounded shadow h-48 p-4 mb-8">
+        <div className="animate-pulse flex flex-row w-full">
+          <div className="basis-1/3">
+            <div className="rounded bg-slate-700 h-36 w-72"></div>
+          </div>
+          <div className="py-2 basis-2/3">
+            <div className="h-2 bg-slate-700 rounded mb-8"></div>
+            <div className="h-2 bg-slate-700 rounded mb-8"></div>
+            <div className="h-2 bg-slate-700 rounded mb-8 w-1/2"></div>
+            <div className="h-2 bg-slate-700 rounded w-1/3"></div>
+          </div>
+        </div>
+      </div>
+    )
+}
+
 const Blog = (props) => {
   const [recentBlogPosts, setRecentBlogPosts] = useState([])
+   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
+    setLoading(true)
     const getBlogData = async () => {
       try {
         const response = await fetch("https://api.hashnode.com",
@@ -54,8 +74,10 @@ const Blog = (props) => {
         });
         const body = await response.json();
         setRecentBlogPosts(body.data.user.publication.posts)
+        setLoading(false)
       }
       catch(error){
+        setLoading(false)
         console.error("There was an error fetching blog posts");
       }
     }
@@ -87,7 +109,7 @@ const Blog = (props) => {
             </p>
           </div>
           <div className="flex flex-wrap justify-center">
-            {renderBlogCards(recentBlogPosts)}
+            {loading ? Array(3).fill(<LoadingCard />) : renderBlogCards(recentBlogPosts)}
           </div>
         </div>
       </section>
