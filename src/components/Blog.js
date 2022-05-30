@@ -58,10 +58,9 @@ const LoadingCard = () => {
 
 const Blog = (props) => {
   const [recentBlogPosts, setRecentBlogPosts] = useState([])
-   const [loading, setLoading] = useState(false)
+   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    setLoading(true)
     const getBlogData = async () => {
       try {
         const response = await fetch("https://api.hashnode.com",
