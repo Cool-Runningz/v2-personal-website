@@ -17,7 +17,7 @@ export default function ContactConfirmation() {
                   <p className="mt-1 text-base text-gray-500">Your submission was successful 📧 </p>
                 </div>
                 <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6"> 
-                  <Link className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-grey-800 bg-[#74c7d5] hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" to="/">Go back home</Link>
+                  <Link className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-grey-800 wedding-blue-bg hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" to="/">Go back home</Link>
                 </div>
               </div>
             </main>
