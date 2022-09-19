@@ -1,6 +1,6 @@
 import React from "react";
 import SocialIcons from "./SocialIcons";
-import avatar from "../images/avatar.svg";
+import { StaticImage } from "gatsby-plugin-image"
 
 const Landing = (props) => {
   return (
@@ -23,7 +23,9 @@ const Landing = (props) => {
             <SocialIcons section="landing" />
           </div>
         </div>
-        <img className="hidden md:block md:h-64" src={avatar} alt="avatar" />
+        <div className="hidden md:block">
+        <StaticImage src="../images/avatar.svg" alt="avatar" placeholder="blurred" loading="eager" height={300} />
+      </div>
       </div>
     </section>
   );
