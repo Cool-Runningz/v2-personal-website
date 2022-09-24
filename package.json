@@ -5,7 +5,8 @@
   "description": "Personal Website for Alyssa Holland",
   "author": "Alyssa Holland",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "developer"
   ],
   "scripts": {
     "develop": "gatsby develop",

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 import SVGSymbols from '../util/SVGSymbols'
 
 const Navbar = (props) => {
@@ -9,58 +10,44 @@ const Navbar = (props) => {
     >
       <div className="w-full container flex items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center w-full sm:w-auto justify-center">
-          <a
-            className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-gray-800"
-            href="#home"
-            aria-label="Logo"
-          >
-             <svg width="250" height="75" viewBox="0 0 398 188">
+          <Link aria-label="Logo" to="/#home">
+          <svg width="250" height="75" viewBox="0 0 398 188">
               {SVGSymbols["logo"]["content"]}
             </svg>
-          </a>
+          </Link> 
         </div>
 
         <div>
           <ul className="list-reset hidden sm:flex justify-end flex-1 items-center">
             <li className="mr-3">
-              <a
-                className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500 "
-                href="#home"
-              >
+              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" to="/#home">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="mr-3">
-              <a
-                className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500"
-                href="#blog"
-              >
+              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" to="/#blog">
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="mr-3">
-              <a
-                className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500"
-                href="#about"
-              >
+              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500"
+                  to="/#about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="mr-3">
-              <a
-                className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500"
-                href="#projects"
-              >
-                Projects
-              </a>
+              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" 
+                 to="/#projects">Projects
+                 </Link>
             </li>
             <li className="mr-3">
-              <a
-                className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500"
-                href="#contact"
-              >
+            <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" 
+              to="/#contact">
                 Contact
-              </a>
+            </Link>
+            </li>
+            <li>
+              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" to="/uses/">Uses</Link>
             </li>
           </ul>
         </div>
