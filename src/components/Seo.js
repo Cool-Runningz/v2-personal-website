@@ -23,21 +23,21 @@ const Seo = (props) => {
 
   return (
       <Helmet title={props.title || title} htmlAttributes={{ lang: 'en' }}>
-          <meta name="image" content={imageUrl} />
-          <meta name="description" content={description} />
+          <meta name="image" content={props.imageUrl || imageUrl} />
+          <meta name="description" content={props.description || description} />
           
-          <meta property="og:description" content={description} />
+          <meta property="og:description" content={props.description || description} />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content={siteUrl} />
-          <meta property="og:image" content={imageUrl} />
-          <meta property="og:title" content={title} />
+          <meta property="og:url" content={props.siteUrl || siteUrl} />
+          <meta property="og:image" content={props.imageUrl || imageUrl} />
+          <meta property="og:title" content={props.title || title} />
 
            <meta name="twitter:card" content="summary_large_image" />
            <meta name="twitter:creator" content={twitterUsername} /> 
-           <meta name="twitter:title" content={title} />
-           <meta name="twitter:url" content={siteUrl} />
-           <meta name="twitter:description" content={description} />
-           <meta name="twitter:image" content={imageUrl} />
+           <meta name="twitter:title" content={props.title || title} />
+           <meta name="twitter:url" content={props.siteUrl || siteUrl} />
+           <meta name="twitter:description" content={props.description || description} />
+           <meta name="twitter:image" content={props.imageUrl || imageUrl} />
       </Helmet>
   )
 }

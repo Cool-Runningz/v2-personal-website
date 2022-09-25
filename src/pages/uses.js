@@ -46,7 +46,9 @@ export default function UsesPage() {
 
   return (
     <Layout>
-      <Seo title="Alyssa Holland | Uses" />
+      <Seo title="Alyssa Holland | Uses" siteUrl="https://alyssaholland.com/uses"
+           description="The Apps, Products and Services that Alyssa Holland uses." 
+      />
       <main className="pt-8 pb-16 bg-gray-100">
         <h1 className="sr-only">Uses</h1>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
