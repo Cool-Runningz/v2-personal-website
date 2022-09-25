@@ -22,7 +22,7 @@ const Seo = (props) => {
    const { title, description, imageUrl, siteUrl, twitterUsername } = site.siteMetadata
 
   return (
-      <Helmet title={title} htmlAttributes={{ lang: 'en' }}>
+      <Helmet title={props.title || title} htmlAttributes={{ lang: 'en' }}>
           <meta name="image" content={imageUrl} />
           <meta name="description" content={description} />
           
