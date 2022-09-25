@@ -6,7 +6,7 @@ module.exports = {
     author: `Alyssa Holland`,
     github: `https://github.com/Cool-Runningz`,
     blog: `https://blog.alyssaholland.me`, // No trailing slash allowed!
-    imageUrl: `./logo-square.png`, // Path to the image placed in the '/static' folder, in the project's root directory.
+    imageUrl: `src/images/logo-square.png`,
     twitterUsername: `@alyssa_codes`
   },
   plugins: [
