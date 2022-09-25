@@ -6,7 +6,7 @@ module.exports = {
     author: `Alyssa Holland`,
     github: `https://github.com/Cool-Runningz`,
     blog: `https://blog.alyssaholland.me`, // No trailing slash allowed!
-    imageUrl: `src/images/logo-square.png`,
+    imageUrl: `https://raw.githubusercontent.com/Cool-Runningz/v2-personal-website/master/src/images/logo-square.png`,
     twitterUsername: `@alyssa_codes`
   },
   plugins: [
