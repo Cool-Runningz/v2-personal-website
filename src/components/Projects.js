@@ -7,6 +7,7 @@ import smashingMagazineCat from '../images/The-Smashing-Cat.svg'
 import digitalOceanLogo from '../images/DO-logo-blue.png'
 import rangeInputImg from "../images/range-input-css.png";
 import shortcutSearchImg from "../images/shortcut-search.png";
+import logRocket from "../images/LogRocket.png"
 
 const Projects = (props) => {
   return (
@@ -43,6 +44,16 @@ const Projects = (props) => {
             altText="DigitalOcean Guest Blog Post"
             onClick={() =>
               window.open("https://www.digitalocean.com/community/tutorials/how-to-test-a-react-app-with-jest-and-react-testing-library", "_blank", "noopener, noreferrer")
+            }
+          />
+           <ProjectCard 
+            imgSrc={logRocket}
+            title="LogRocket"
+            description="Guest Blog Post"
+            btnText="View Article"
+            altText="LogRocket Guest Blog Post"
+            onClick={() =>
+              window.open("https://blog.logrocket.com/building-design-system-radix/", "_blank", "noopener, noreferrer") 
             }
           />
            <ProjectCard
