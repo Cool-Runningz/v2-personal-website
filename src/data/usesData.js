@@ -133,6 +133,15 @@ const usesData = [
                 name: "Remarkable 2",
                 url: "https://remarkable.com/",
                 description: "E-ink tablet that feels like writing on paper. I store all my handwritten notes here and love the tactile nature of it."
+            },
+            {
+                name: "Kindle Scribe",
+                url: "https://www.amazon.com/dp/B09BRZBK15",
+            },
+            {
+                name: "FluidStance",
+                url: "https://fluidstance.com/products/the-plane-balance-board-for-standing-desk",
+                description: "Standing desk balance board"
             }
         ]
     },
@@ -157,6 +166,11 @@ const usesData = [
                 name: "Pandan",
                 url: "https://sindresorhus.com/pandan",
                 description: "Time awareness in your menubar"
+            },
+            {
+                name: "Sunsama",
+                url: "https://try.sunsama.com/s9ge3hch67lp",
+                description: "The digital daily planner that helps you feel calm and stay focused."
             }
         ]
     },
@@ -215,6 +229,11 @@ const usesData = [
                 name: "Magnet",
                 url: "https://magnet.crowdcafe.com/",
                 description: "Move and resize windows on macOS with keyboard shortcuts. (I use Rectangle, an open source alternative, on my work computer.)"
+            },
+            {
+                name: "Ulysses",
+                url: "https://ulysses.app/",
+                description: "Writing app that's great for organizing larger writing projects." 
             }
         ]
     },
