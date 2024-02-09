@@ -9,30 +9,35 @@ const getFormattedDate = (date) => {
 };
 
 const renderBlogCards = (posts) => {
-  return posts.slice(0, 5).map((post, index) => {
+  return posts.map(({ node }) => {
     return (
-      <BlogCard
-        key={`${index}-${post.slug}`}
-        slug={post.slug}
-        coverImage={post.coverImage}
-        title={post.title}
-        brief={post.brief}
-        dateAdded={getFormattedDate(post.dateAdded)}
-      />
+       <BlogCard
+        key={node.id}
+        slug={node.slug}
+        coverImage={node.coverImage.url}
+        title={node.title}
+        brief={node.brief}
+        dateAdded={getFormattedDate(node.publishedAt)}
+      /> 
     );
   });
 };
 
 const query = `
 {
-  user(username:"AlyssaCodes") {
-    publication {
-      posts(page: 0) {
-        title
-        brief
-        slug
-        coverImage
-        dateAdded
+  publication(host: "blog.alyssaholland.me") {
+    posts(first: 5) {
+      edges {
+        node {
+          id
+          title
+          brief
+          slug
+          publishedAt
+          coverImage {
+            url
+          }
+        }
       }
     }
   }
@@ -63,7 +68,7 @@ const Blog = (props) => {
   useEffect(() => {
     const getBlogData = async () => {
       try {
-        const response = await fetch("https://api.hashnode.com",
+        const response = await fetch("https://gql.hashnode.com",
      { //request options
           method: "POST",
           headers: {
@@ -72,7 +77,7 @@ const Blog = (props) => {
         body: JSON.stringify({ query: query })
         });
         const body = await response.json();
-        setRecentBlogPosts(body.data.user.publication.posts)
+        setRecentBlogPosts(body.data.publication.posts.edges)
         setLoading(false)
       }
       catch(error){
