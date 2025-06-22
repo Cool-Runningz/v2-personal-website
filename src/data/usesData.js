@@ -17,6 +17,11 @@ const usesData = [
                 description: "Simple text editor for viewing individual files."
             },
             {
+                name: "Fork",
+                url: "https://fork.dev/",
+                description: "Git GUI client"
+            },
+            {
                 name: "RunJS",
                 url: "https://runjs.app",
                 description: "JavaScript playground for your desktop"
@@ -27,8 +32,9 @@ const usesData = [
         section: "Terminal and CLI Tools",
         items: [
             {
-                name: "iTerm2",
-                url: "https://iterm2.com/"
+                name: "Warp",
+                url: "https://www.warp.dev/",
+                description: 'The intelligent terminal.'
             },
             {
                 name: "Cobalt2 theme by Wes Bos",
@@ -59,22 +65,12 @@ const usesData = [
                 name: "Homebrew 🍺",
                 url: "https://brew.sh/",
                 description: "The Missing Package Manager for macOS"
-            },
-            {
-                name: "Fig",
-                url: "https://fig.io/",
-                description: "Autocomplete for the command line"
-            },
+            }
         ]
     },
     {
         section: "Services",
         items: [
-            {
-                name: "Mailbrew ☕",
-                url: "https://mailbrew.com/?aff=Aholland",
-                description: "Personal content digest. Helps reduce FOMO and keeps me up-to-date on the latest and greatest."
-            },
             {
                 name: "Plausible 📊",
                 url: "https://plausible.io",
@@ -125,8 +121,8 @@ const usesData = [
                 url: "https://amzn.to/3r6wJXk" 
             },
             {
-                name: "Bose QuietComfort 35 🎧",
-                url: "https://amzn.to/3ffc54H", 
+                name: "Sony WH-1000XM4 🎧",
+                url: "https://www.amazon.com/dp/B0863TXGM3", 
                 description: "Noise Cancelling, Over-ear Headphones"
             },
             {
@@ -149,13 +145,13 @@ const usesData = [
         section: "Productivity Tools",
         items: [
             {
-                name: "Alfred 🎩",
-                url: "https://www.alfredapp.com/",
+                name: "Raycast",
+                url: "https://www.raycast.com/",
             },
-            {
-                name: "Session",
-                url: "https://www.stayinsession.com/",
-                description: "Pomodoro Focus Timer"
+              {
+                name: "Twos ✌️",
+                url: "https://www.twosapp.com/",
+                description: "Organize notes, to-dos, reminders & more in one, simple place."
             },
             {
                 name: "Things 3",
@@ -211,9 +207,19 @@ const usesData = [
                 description: "Email client"
             },
             {
-                name: "Zappy",
-                url: "https://zapier.com/zappy",
+                name: "Shottr",
+                url: "https://shottr.cc/",
                 description: "For recoding gifs and screenshots"
+            },
+            {
+                name: "Cleanshot X",
+                url: "https://cleanshot.com/",
+                description: "For video recordings"
+            },
+            {
+                name: "Superwhisper",
+                url: "https://superwhisper.com/",
+                description: "Speech-to-text tool"
             },
             {
                 name: "Eagle",
@@ -229,11 +235,6 @@ const usesData = [
                 name: "Magnet",
                 url: "https://magnet.crowdcafe.com/",
                 description: "Move and resize windows on macOS with keyboard shortcuts. (I use Rectangle, an open source alternative, on my work computer.)"
-            },
-            {
-                name: "Ulysses",
-                url: "https://ulysses.app/",
-                description: "Writing app that's great for organizing larger writing projects." 
             }
         ]
     },

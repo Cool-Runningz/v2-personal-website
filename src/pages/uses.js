@@ -56,7 +56,7 @@ export default function UsesPage() {
             <div className="flex justify-center mb-4">
             <StaticImage className="rounded-sm" src="../images/desk-corner.jpg" alt="desk" placeholder="blurred" loading="eager" height={500} width={1000} />
             </div>
-          <p className="text-gray-700 pl-4 border-l-4 border-gray-400">Last Updated: July 8, 2023 </p>
+          <p className="text-gray-700 pl-4 border-l-4 border-gray-400">Last Updated: June 22, 2025 </p>
           <p className="italic text-sm font-semibold mt-4">*Note: A small subset of the links provided are affiliate links*</p>
           {renderSections(usesData)}
           </div>
