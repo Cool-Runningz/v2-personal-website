@@ -3,9 +3,9 @@ import React from "react";
 const Contact = (props) => {
   return (
     <section id="contact" className="container mx-auto text-center py-6 pb-12">
-      <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
         Contact
-      </h1>
+      </h2>
       <div className="w-full mb-4">
         <div className="h-1 mx-auto w-1/6 opacity-50 my-0 py-0 rounded-t bg-white"></div>
       </div>

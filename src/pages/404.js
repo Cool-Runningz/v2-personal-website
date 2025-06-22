@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Seo from "../components/Seo";
+import Head from "../components/Head";
 
 const NotFoundPage = () => {
   return (
     <main>
-      <Seo title="404 - Not found" />
+      <Head title="404 - Not found" />
       <div className="bg-white min-h-screen px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
           <div className="max-w-max mx-auto">
             <main className="sm:flex">

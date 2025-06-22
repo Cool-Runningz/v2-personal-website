@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout';
-import Seo from "../components/Seo";
+import Head from "../components/Head";
 import usesData from '../data/usesData'
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -46,7 +46,7 @@ export default function UsesPage() {
 
   return (
     <Layout>
-      <Seo title="Alyssa Holland | Uses" siteUrl="https://alyssaholland.com/uses"
+      <Head title="Alyssa Holland | Uses" siteUrl="https://alyssaholland.com/uses"
            description="The Apps, Products and Services that Alyssa Holland uses." 
       />
       <main className="pt-8 pb-16 bg-gray-100">

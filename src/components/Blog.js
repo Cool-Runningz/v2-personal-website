@@ -113,7 +113,7 @@ const Blog = (props) => {
             </p>
           </div>
           <div className="flex flex-wrap justify-center">
-            {loading ? Array(4).fill(<LoadingCard />) : renderBlogCards(recentBlogPosts)}
+            {loading ? Array(4).fill(0).map((_, index) => <LoadingCard key={index} /> ) : renderBlogCards(recentBlogPosts)}
           </div>
         </div>
       </section>

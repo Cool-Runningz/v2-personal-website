@@ -5,7 +5,7 @@ import waveTop from "../images/waveTop.svg";
 import waveBottom from "../images/waveBottom.svg";
 
 //Components
-import Seo from "../components/Seo";
+import Head from "../components/Head";
 import Layout from '../components/Layout';
 import Landing from '../components/Landing'
 import Blog from '../components/Blog';
@@ -16,7 +16,7 @@ import Contact from '../components/Contact';
 const IndexPage = () => {
   return (
    <Layout>
-       <Seo />
+       <Head />
        <main className="leading-normal tracking-normal text-white wedding-blue-bg">
         <Landing />
 
