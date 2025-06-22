@@ -18,12 +18,13 @@ const ProjectCard = (props) => {
       </div>
 
       <div className="max-w-sm">
-        <button
-          className="wedding-blue-bg hover:bg-gray-400 hover:text-gray-800 text-gray-800 font-bold py-2 px-4 rounded w-full"
-          onClick={props.onClick}
+         <a
+          className="wedding-blue-bg hover:bg-gray-400 hover:text-gray-800 text-gray-800 font-bold py-2 px-4 rounded w-full block text-center cursor-pointer focus:text-gray-800 focus:bg-gray-400 outline-none"
+          target="_blank" rel="noopener noreferrer"
+          href={props.href}
         >
-          {props.btnText}
-        </button>
+          {props.linkText}
+        </a>
       </div>
     </div>
   );
@@ -34,8 +35,8 @@ ProjectCard.propTypes = {
   altText: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  btnText: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  linkText: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;

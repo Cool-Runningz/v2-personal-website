@@ -1,11 +1,10 @@
 {
   "name": "v2-personal-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Personal Website for Alyssa Holland",
   "author": "Alyssa Holland",
   "keywords": [
-    "gatsby",
     "developer"
   ],
   "scripts": {

@@ -20,34 +20,38 @@ const Navbar = (props) => {
         <div>
           <ul className="list-reset hidden sm:flex justify-end flex-1 items-center">
             <li className="mr-3">
-              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" to="/#home">
+              <Link className="hover:underline decoration-wavy decoration-[#74c7d5] py-2 px-3 inline-block text-black" to="/#home">
                 Home
               </Link>
             </li>
             <li className="mr-3">
-              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" to="/#blog">
+              <Link className="hover:underline decoration-wavy decoration-[#74c7d5] py-2 px-3 inline-block text-black" to="/#blog">
                 Blog
               </Link>
             </li>
             <li className="mr-3">
-              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500"
+              <Link className="hover:underline decoration-wavy decoration-[#74c7d5] py-2 px-3 inline-block text-black"
                   to="/#about">
                 About
               </Link>
             </li>
             <li className="mr-3">
-              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" 
+              <Link className="hover:underline decoration-wavy decoration-[#74c7d5] py-2 px-3 inline-block text-black" 
                  to="/#projects">Projects
                  </Link>
             </li>
             <li className="mr-3">
-            <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" 
+            <Link className="hover:underline decoration-wavy decoration-[#74c7d5] py-2 px-3 inline-block text-black" 
               to="/#contact">
                 Contact
             </Link>
             </li>
             <li>
-              <Link className="py-2 px-4 inline-block text-black no-underline hover:text-gray-500" to="/uses/">Uses</Link>
+              <Link className="hover:underline decoration-wavy decoration-[#74c7d5] py-2 px-3 inline-block text-black" to="/uses/">Uses</Link>
+            </li>
+            <li>
+              <a href="https://www.newline.co/courses/the-approachable-guide-to-accessible-components" className="hover:underline decoration-wavy decoration-[#74c7d5] py-2 px-3 inline-block text-black"
+                  target="_blank" rel="noopener noreferrer">Course</a>
             </li>
           </ul>
         </div>
