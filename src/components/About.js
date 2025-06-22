@@ -22,22 +22,30 @@ const About = (props) => {
           </figure>
           <div>
             <p className="leading-8 px-8">
-              I graduated from Florida State University with a degree in
-              Computer Science and I work professionally as a UI Developer. My
-              first love was music though as I played saxophone all throughout
-              middle and high school and even minored in it my first two years
-              of college.
-              <br />
-              <br />
-              My first 5K was the catalyst to my ongoing running journey and now
-              I've completed a myriad of 5K’s, 2 Half Marathons, and checked the
-              Marathon off my bucket list ✅
-              <br />
-              <br />
-              Overall, I have a strong passion for learning and striving to be
-              the best I can be. Feel free to check out my Github to see the
-              side projects I’m working on, along with the code that was written
-              to create this website.
+            I earned my Computer Science degree from Florida State University and have been working as a software developer since 2014.
+            Much of my focus has been on front-end development, especially component libraries and accessibility. 
+            That work has taught me how much thoughtful design and implementation can shape someone’s experience of the web.
+            <br /><br />
+             I’ve always believed that the best way to learn is to teach, which is why I write regularly about what I’m exploring — from technical deep dives to productivity tools. 
+             My writing has appeared in places like <a className="hover:underline font-bold decoration-wavy decoration-[#74c7d5]"
+                               target="_blank" rel="noopener noreferrer"
+                               href="https://www.smashingmagazine.com/author/alyssa-holland/">Smashing Magazine</a>, 
+                               <a className="hover:underline font-bold decoration-wavy decoration-[#74c7d5]"
+                               target="_blank" rel="noopener noreferrer"
+                               href="https://www.digitalocean.com/community/tutorials/how-to-test-a-react-app-with-jest-and-react-testing-library">&nbsp;DigitalOcean</a>, and 
+                               <a className="hover:underline font-bold decoration-wavy decoration-[#74c7d5]"
+                               target="_blank" rel="noopener noreferrer"
+                               href="https://blog.logrocket.com/author/alyssaholland/">&nbsp;LogRocket</a>, and I also created a course called 
+                               <a className="hover:underline font-bold decoration-wavy decoration-[#74c7d5] italic"
+                               target="_blank" rel="noopener noreferrer"
+                               href="https://www.newline.co/courses/the-approachable-guide-to-accessible-components">&nbsp;The Approachable Guide to Accessible Components</a> to help others build more inclusive UIs.
+
+            <br /><br />
+             Beyond development, I co-host a podcast with my sister called <a className="hover:underline font-bold decoration-wavy decoration-[#74c7d5]"
+                               target="_blank" rel="noopener noreferrer"
+                               href="https://cultureinbetween.com/">Culture In Between</a>, where we explore the unique experiences of people who’ve grown up in a culture different from their parents’.
+            <br /><br />
+             These days, I split my time between writing, coding, and building things that (hopefully) make the web a little better for the next person who comes along.
             </p>
           </div>
         </div>
