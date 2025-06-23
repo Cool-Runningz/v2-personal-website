@@ -7,7 +7,7 @@ import rangeInputImg from "../images/range-input-css.png"
 
 export default function OSSProjects() {
   return (
-    <section className="bg-white py-8" id="projects">
+    <section className="bg-white py-8" id="oss">
       <div className="container mx-auto max-w-7xl flex flex-wrap pt-12 pb-12">
         <h3 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
           Open-Source

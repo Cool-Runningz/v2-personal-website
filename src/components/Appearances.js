@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Appearances() {
   return (
-    <section className="bg-white" id="projects">
+    <section className="bg-white px-2" id="appearances">
       <div className="container mx-auto max-w-7xl flex flex-wrap pt-12">
         <h3 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
           Appearances
@@ -12,7 +12,7 @@ export default function Appearances() {
         </div>
         <div className="flex w-full justify-around flex-wrap">
         </div>
-       <div className="flex w-full justify-around flex-wrap gap-4">
+       <div className="flex w-full justify-around flex-wrap gap-4 px-8">
         <iframe title='frontend.fm podcast' style={{borderRadius: '12px'}} src="https://open.spotify.com/embed/episode/17fCQ2SPSVT3cnzXUgyJRl/video?utm_source=generator" width="575" height="351" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <a href="https://www.newline.co/courses/the-approachable-guide-to-accessible-components" target="_blank" rel="noreferrer"> 
             <img src="https://raw.githubusercontent.com/Cool-Runningz/Cool-Runningz/main/images/course-thumbnail.webp" alt="'The Approachable Guide to Accessible Components' course" height="auto" width="575px" />
