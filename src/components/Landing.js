@@ -14,7 +14,7 @@ const Landing = (props) => {
             👩🏽‍💻 UI Developer
           </p>
           <p className="text-2xl text-gray-800 mb-3 font-mono">
-            🏃🏽‍♀️ Avid Runner
+            🟧 LEGO Enthusiast
           </p>
           <p className="text-2xl text-gray-800 mb-3 font-mono">
             🎷 Former Band Geek

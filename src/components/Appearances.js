@@ -13,7 +13,7 @@ export default function Appearances() {
         <div className="flex w-full justify-around flex-wrap">
         </div>
        <div className="flex w-full justify-around flex-wrap gap-4 px-8">
-        <iframe title='frontend.fm podcast' style={{borderRadius: '12px'}} src="https://open.spotify.com/embed/episode/17fCQ2SPSVT3cnzXUgyJRl/video?utm_source=generator" width="575" height="351" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe title='frontend.fm podcast' style={{borderRadius: '12px'}} src="https://open.spotify.com/embed/episode/17fCQ2SPSVT3cnzXUgyJRl/video?utm_source=generator" width="575" height="323" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <a href="https://www.newline.co/courses/the-approachable-guide-to-accessible-components" target="_blank" rel="noreferrer"> 
             <img src="https://raw.githubusercontent.com/Cool-Runningz/Cool-Runningz/main/images/course-thumbnail.webp" alt="'The Approachable Guide to Accessible Components' course" height="auto" width="575px" />
         </a>

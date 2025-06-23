@@ -14,7 +14,7 @@ const Ahref = (props) => {
   return (
     <a
     href={props.url}
-    className={props.section === "landing" ? "mr-8" : "mr-16"}
+    className={props.section === "landing" ? "mr-8" : "mr-10"}
     target="_blank" 
     rel="noopener noreferrer"
   >
