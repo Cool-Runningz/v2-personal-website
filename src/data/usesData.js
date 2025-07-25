@@ -12,8 +12,8 @@ const usesData = [
                 url: "https://code.visualstudio.com",
             },
             {
-                name: "Brackets",
-                url: "https://brackets.io",
+                name: "CotEditor",
+                url: "https://coteditor.com/",
                 description: "Simple text editor for viewing individual files."
             },
             {
@@ -235,6 +235,26 @@ const usesData = [
                 name: "Magnet",
                 url: "https://magnet.crowdcafe.com/",
                 description: "Move and resize windows on macOS with keyboard shortcuts. (I use Rectangle, an open source alternative, on my work computer.)"
+            },
+             {
+                name: 'HEIC Converter',
+                url: 'https://sindresorhus.com/heic-converter',
+                description: 'Convert HEIC images to JPEG or PNG'
+            },
+            {
+                name: 'Vanilla',
+                url: 'https://matthewpalmer.net/vanilla/',
+                description: 'Hide menu bar icons on your Mac.'
+            },
+            {
+                name: 'FastFolderFinder',
+                url: 'https://matthewpalmer.net/fastfolderfinder/',
+                description: 'Launch apps and find folders, right from your keyboard.'
+            },
+            {
+                name: 'Hyperkey',
+                url: 'https://hyperkey.app/',
+                description: 'The extra macOS modifier key'
             }
         ]
     },
@@ -245,20 +265,10 @@ const usesData = [
                 name: "Momentum",
                 url: "https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca",
                 description: "Daily inspirational photo and quote"
-            },
-            {
-                name: "Workona Tab Manager",
-                url: "https://chrome.google.com/webstore/detail/workona-tab-manager/ailcmbgekjpnablpdkmaaccecekgdhlh",
-                description: "Helps me wrangle the copious amounts of tabs I inevitably have open."
-            },
+            }, 
             {
                 name: "JSON Formatter",
                 url: "https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa"
-            },
-            {
-                name: "Save to Pocket",
-                url: "https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj",
-                description: "Read-it-later tool"
             },
             {
                 name: "Atom File Icons Web",
@@ -280,11 +290,7 @@ const usesData = [
             {
                 name: "Grammarly",
                 url: "https://chrome.google.com/webstore/detail/grammarly-grammar-checker/kbfnbcaeplbcioakkpcpgfkobkghlhen"
-            },
-            {
-                name: "Material DevTools Theme Collection",
-                url: "https://chrome.google.com/webstore/detail/material-devtools-theme-c/jmefikbdhgocdjeejjnnepgnfkkbpgjo"
-            },
+            }, 
             {
                 name: "Notion Web Clipper",
                 url: "https://chrome.google.com/webstore/detail/notion-web-clipper/knheggckgoiihginacbkhaalnibhilkk"
