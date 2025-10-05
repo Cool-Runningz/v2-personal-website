@@ -26,7 +26,7 @@ const About = (props) => {
             Much of my focus has been on front-end development, especially component libraries and accessibility. 
             That work has taught me how much thoughtful design and implementation can shape someone’s experience of the web.
             <br /><br />
-             I’ve always believed that the best way to learn is to teach, which is why I write regularly about what I’m exploring — from technical deep dives to productivity tools. 
+             I’ve always believed that the best way to learn is to teach, which is why I write regularly about what I’m exploring like technical deep dives or productivity tools. 
              My writing has appeared in places like <a className="hover:underline font-bold decoration-wavy decoration-[#74c7d5]"
                                target="_blank" rel="noopener noreferrer"
                                href="https://www.smashingmagazine.com/author/alyssa-holland/">Smashing Magazine</a>, 

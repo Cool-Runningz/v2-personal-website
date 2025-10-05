@@ -9,10 +9,9 @@ const Contact = (props) => {
       <div className="w-full mb-4">
         <div className="h-1 mx-auto w-1/6 opacity-50 my-0 py-0 rounded-t bg-white"></div>
       </div>
-      <p className="my-7 text-3xl leading-tight text-gray-800 text-center">
-      If you’d like to get in touch with me or just say “Hi” 👋🏽 <br />
-            feel free to fill out the form.
-       
+      <p className="my-7 text-xl sm:text-2xl md:text-3xl leading-tight text-gray-800 text-center">
+        If you’d like to get in touch with me or just say “Hi” 👋🏽 <br />
+        feel free to fill out the form.
       </p>
 
 
@@ -29,7 +28,7 @@ const Contact = (props) => {
           type="text"
           name="full-name"
            id="full-name"
-          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
           required
         />
       </div>
@@ -45,7 +44,7 @@ const Contact = (props) => {
           type="email"
           name="email"
           id="email"
-          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
           required
         />
       </div>
@@ -60,7 +59,7 @@ const Contact = (props) => {
           type="text"
           name="subject"
            id="subject"
-          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+          className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
         />
       </div>
     </div>
@@ -73,7 +72,7 @@ const Contact = (props) => {
                   id="message"
                   name="message"
                   rows={4}
-                  className="text-black block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                  className="text-black block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border border-gray-300 rounded-md"
                   placeholder="Message*"
                   defaultValue={''}
                   required
@@ -82,7 +81,7 @@ const Contact = (props) => {
               <div>
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-700 hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-cyan-700 hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
                 >
                   Submit
                 </button>
